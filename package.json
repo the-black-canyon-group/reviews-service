@@ -1,0 +1,31 @@
+{
+  "name": "reviews-frontend",
+  "version": "1.0.0",
+  "description": "COMPONENTS IN REVIEWS:",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-black-canyon-group/reviews-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-black-canyon-group/reviews-service/issues"
+  },
+  "homepage": "https://github.com/the-black-canyon-group/reviews-service#readme",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "webpack": "^4.39.2"
+  }
+}
