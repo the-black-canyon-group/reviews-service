@@ -90,10 +90,10 @@
 /*!**************************!*\
   !*** ./client/index.jsx ***!
   \**************************/
-/*! no static exports found */
+/*! no exports provided */
 /***/ (function(module, exports) {
 
-eval("// Render DOM Component\n\n//# sourceURL=webpack:///./client/index.jsx?");
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nSyntaxError: /Users/kaylatillman/Desktop/fec_hr/reviews-frontend/package.json: Error while parsing JSON - Unexpected token < in JSON at position 251\\n    at JSON.parse (<anonymous>)\\n    at readConfigPackage (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/@babel/core/lib/config/files/package.js:57:20)\\n    at /Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/@babel/core/lib/config/files/utils.js:29:12\\n    at cachedFunction (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/@babel/core/lib/config/caching.js:33:19)\\n    at findPackageData (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/@babel/core/lib/config/files/package.js:33:11)\\n    at buildRootChain (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/@babel/core/lib/config/config-chain.js:105:85)\\n    at loadPrivatePartialConfig (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/@babel/core/lib/config/partial.js:85:55)\\n    at Object.loadPartialConfig (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/@babel/core/lib/config/partial.js:110:18)\\n    at Object.<anonymous> (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/babel-loader/lib/index.js:144:26)\\n    at Generator.next (<anonymous>)\\n    at asyncGeneratorStep (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/babel-loader/lib/index.js:3:103)\\n    at _next (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/babel-loader/lib/index.js:5:194)\\n    at /Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/babel-loader/lib/index.js:5:364\\n    at new Promise (<anonymous>)\\n    at Object.<anonymous> (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/babel-loader/lib/index.js:5:97)\\n    at Object.loader (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/babel-loader/lib/index.js:60:18)\\n    at Object.<anonymous> (/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/node_modules/babel-loader/lib/index.js:55:12)\");\n\n//# sourceURL=webpack:///./client/index.jsx?");
 
 /***/ })
 
