@@ -14,7 +14,7 @@ class ReviewList extends React.Component {
         axios.get('/reviews') 
             .then((reviews) => {
                 //IF REVIEW DOES NOT HAVE RESPONSE KEYS 
-                _.map(reviews, (review) => {
+                reviews.map((review) => {
                     if (review.response_first_name === undefined) {
                         this.setState({
                             reviews: reviews.push(review)
@@ -24,6 +24,9 @@ class ReviewList extends React.Component {
                     }
                 })
                 
+            })
+            .catch((err) => {
+                console.log(err)
             });
     }
         

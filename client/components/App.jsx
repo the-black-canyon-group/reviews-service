@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import ReviewList from './ReviewList.jsx';
 
-
 class App extends React.Component {
     constructor(props) {
         super(props)
@@ -10,16 +9,20 @@ class App extends React.Component {
 
     componentDidMount() {
         axios.get('/')
+            .then(() => {
+                console.log('CONNECTED TO SERVER')
+            })
     }
+
 
     render() {
         <div>
-           helloWorld
         </div>
     }
 
 }
 export default App;
+
 
 
 
