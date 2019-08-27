@@ -20,7 +20,9 @@ class ReviewList extends React.Component {
                             reviews: reviews.push(review)
                         })
                     } else {
-                        this.setState({reviewsWithResponses: reviews.push(review) })
+                        this.setState({
+                            reviewsWithResponses: reviews.push(review) 
+                        })
                     }
                 })
                 
