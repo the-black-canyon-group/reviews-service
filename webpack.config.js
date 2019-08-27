@@ -1,9 +1,11 @@
 const path = require('path')
+
+
 module.exports = {
   entry: './client/index.jsx',
   module: {
     rules: [{
-      test: [/\.jsx$/],
+      test: [/\.jsx$/, /\.jsx$/],
       exclude: /node_modules/,
       use: {
         loader: 'babel-loader',
@@ -11,8 +13,7 @@ module.exports = {
           presets: ['@babel/preset-react', '@babel/preset-env']
         }
       }
-    }
-    ]
+    }]
   },
   output: {
     filename: 'bundle.js',
