@@ -2,7 +2,7 @@ const path = require('path')
 
 
 module.exports = {
-  entry: './client/index.jsx',
+  entry: './src/index.jsx',
   module: {
     rules: [{
       test: [/\.jsx$/, /\.js$/],
