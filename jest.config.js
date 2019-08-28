@@ -5,7 +5,7 @@ module.exports = {
             "lines": 80
         }
     },
-    moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx", "node"],
+    moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx"],
     collectCoverageFrom: [
         "**/*.{js,jsx}",
         "!**/node_modules/**",

@@ -15,7 +15,7 @@ class ReviewList extends Component {
         axios.get('/reviews') 
             .then((reviews) => {
                 //IF REVIEW DOES NOT HAVE RESPONSE KEYS
-                console.log(reviews.data)
+                // console.log(reviews.data)
                 this.setState({
                     reviews: reviews.data
                 })
