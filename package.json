@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode development --watch"
+    "build": "webpack --mode=development --watch"
   },
   "proxy": "http://localhost:3001",
   "repository": {
@@ -15,9 +15,6 @@
   "author": "Kayla",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
     "axios": "^0.19.0",
     "babel-loader": "^8.0.6",
     "react": "^16.9.0",
@@ -28,6 +25,9 @@
     "webpack-cli": "^3.3.7"
   },
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0"
   }
 }

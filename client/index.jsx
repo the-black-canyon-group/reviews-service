@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReviewList from './components/ReviewList.jsx';
+import App from './App.jsx';
 
 
-ReactDOM.render(<ReviewList/>, document.getElementById('review-list'))
+
+ReactDOM.render(<App/>, document.getElementById('app'))
