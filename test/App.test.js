@@ -14,7 +14,7 @@ describe('<App/>', () => {
         expect(wrapper.find('div'));
     });
 });
-
+// REVIEW LIST TESTING
 // describe('<ReviewList/> ', () => {
 //     test('should render an unordered list of 100 list items', () => {
 //         let wrapper = render(<ReviewList/>);
