@@ -4,7 +4,7 @@
   "description": "Reviews Frontend",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "npx jest",
+    "test": "npx jest --coverage",
     "build": "npx webpack --mode=production --watch"
   },
   "server": "http://localhost:3001",

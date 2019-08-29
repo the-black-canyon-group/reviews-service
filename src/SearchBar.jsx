@@ -1,6 +1,12 @@
+import React from 'react'
 
+const SearchBar = (props) => {
+    return (
+        <div>Search</div>
+    )
+}
 
-
+export default SearchBar
 // TOTAL REVIEWS COMPONENT(100)
 //AVG REVIEWS: (1-5)
 

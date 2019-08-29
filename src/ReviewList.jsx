@@ -30,7 +30,6 @@ class ReviewList extends Component {
             <ul>
                 {this.state.reviews.map((review) => {
                     return(
-                        
                         <ReviewListItem key={review.id}
                             id={review.id}
                             name={review.first_name}

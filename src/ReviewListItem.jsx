@@ -20,13 +20,13 @@ export default ReviewListItem
 
 
 // ReviewList.propTypes = {
-//     // id
-//     //                         name={ review.first_name }
-//     //                         profile_picture={ review.profile_picture }
-//     //                         date={ review.localized_date }
-//     //                         review={ review.review }
-//     //                         response_first_name={ review.response_first_name }
-//     //                         response_profile_picture={ review.response_profile_picture }
-//     //                         response_comment={ review.response_comment }
-//     //                         response_localized_date={ review.response_localized_date }
+//     id
+//     name={ review.first_name }
+//     profile_picture={ review.profile_picture }
+//     date={ review.localized_date }
+//     review={ review.review }
+//     response_first_name={ review.response_first_name }
+//     response_profile_picture={ review.response_profile_picture }
+//     response_comment={ review.response_comment }
+//     response_localized_date={ review.response_localized_date }
 // };
