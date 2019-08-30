@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 function ReviewListItem(props) {
     return (
@@ -18,15 +19,6 @@ function ReviewListItem(props) {
 
 export default ReviewListItem
 
-
-// ReviewList.propTypes = {
-//     id
-//     name={ review.first_name }
-//     profile_picture={ review.profile_picture }
-//     date={ review.localized_date }
-//     review={ review.review }
-//     response_first_name={ review.response_first_name }
-//     response_profile_picture={ review.response_profile_picture }
-//     response_comment={ review.response_comment }
-//     response_localized_date={ review.response_localized_date }
-// };
+ReviewListItem.propTypes = {
+    optionalObject: PropTypes.object
+};

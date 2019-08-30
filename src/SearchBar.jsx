@@ -1,28 +1,46 @@
-import React from 'react'
+import React, { Component } from 'react'
+import SearchField from 'react-search-field';
+import PropTypes from 'prop-types';
 
-const SearchBar = (props) => {
-    return (
-        <div>Search</div>
-    )
+
+class SearchBar extends Component {
+    constructor(props) {
+        super(props);
+        //props ==> search
+        this.state = {
+            value: ''
+        }
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(e) {
+        this.setState({
+            value: e.target.value
+        })
+    };
+
+    handleSubmit(e) {
+        e.preventDefault()
+        this.props.search(this.state.value)
+        this.setState({
+            value: ''
+        })
+    };
+   
+    render() {
+        return (
+            <SearchField
+                handleChange={this.handleChange}
+                handleSubmit={this.handleSubmit}
+                placeHolder={"Search reviews"}
+            />
+        );
+    }
+
 }
 
 export default SearchBar
-// TOTAL REVIEWS COMPONENT(100)
-//AVG REVIEWS: (1-5)
-
-
-// AVG REVIEW STARS
-
-
-//SEARCH: THROUGH TEXT
-//RENDER ALL REVIEWS W/ INCLUDED SEARCH TERM
-
-
-
-
-
-//CREATE SUB-ANOTHER COMPONENT  ===> STARRED REVIEWS 
-
-
-
-
+SearchBar.propTypes = {
+    search: PropTypes.func
+}
