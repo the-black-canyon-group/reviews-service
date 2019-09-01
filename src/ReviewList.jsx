@@ -28,5 +28,5 @@ const ReviewList = (props) => {
 
 export default ReviewList;
 ReviewList.propTypes = {
-    reviews: PropTypes.func
+    reviews: PropTypes.array
 }

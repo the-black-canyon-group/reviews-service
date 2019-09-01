@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import SearchField from 'react-search-field';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
@@ -22,7 +21,7 @@ class SearchBar extends Component {
 
     handleSubmit(e) {
         e.preventDefault()
-        this.props.search(this.state.value)
+        this.props.handleSearch(this.state.value)
         this.setState({
             value: ''
         })
@@ -30,11 +29,15 @@ class SearchBar extends Component {
    
     render() {
         return (
-            <SearchField
-                handleChange={this.handleChange}
-                handleSubmit={this.handleSubmit}
-                placeHolder={"Search reviews"}
-            />
+            <form onSubmit={this.handleSubmit} >
+                <input
+                    type="text"
+                    value={this.state.value}
+                    onChange={this.handleChange}
+                    placeholder={"Search reviews"}
+                />
+                <input type="submit" />
+            </form>
         );
     }
 
@@ -42,5 +45,5 @@ class SearchBar extends Component {
 
 export default SearchBar
 SearchBar.propTypes = {
-    search: PropTypes.func
+    search: PropTypes.array
 }
