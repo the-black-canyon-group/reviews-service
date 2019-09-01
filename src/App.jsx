@@ -12,7 +12,6 @@ class App extends React.Component {
         reviews: [],
         searchedTerm: null
       }
-      // this.filterReviewsBySearchedTerm = this.filterReviewsBySearchedTerm.bind(this)
       this.clearSearch = this.clearSearch.bind(this)
       this.handleSearch = this.handleSearch.bind(this)
     }

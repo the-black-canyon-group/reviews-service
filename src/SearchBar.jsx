@@ -36,7 +36,6 @@ class SearchBar extends Component {
                     onChange={this.handleChange}
                     placeholder={"Search reviews"}
                 />
-                <input type="submit" />
             </form>
         );
     }
