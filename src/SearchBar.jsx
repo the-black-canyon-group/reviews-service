@@ -43,6 +43,7 @@ class SearchBar extends Component {
 }
 
 export default SearchBar
+
 SearchBar.propTypes = {
-    search: PropTypes.array
+    reviews: PropTypes.array
 }

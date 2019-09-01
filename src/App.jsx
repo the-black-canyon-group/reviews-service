@@ -3,7 +3,7 @@ import axios from 'axios';
 import ReviewList from './ReviewList.jsx';
 import SearchBar from './SearchBar.jsx';
 import NoResults from './NoResults.jsx'
-
+import StarredRatings from './StarredRatings.jsx'
 
 class App extends React.Component {
     constructor(props) {
@@ -51,6 +51,7 @@ class App extends React.Component {
     const filtered_reviews = this.filterReviewsBySearchedTerm()   
     return (
       <div>
+        <StarredRatings starred_reviews={this.state.reviews}/>
         <SearchBar handleSearch={this.handleSearch} />
         {filtered_reviews.length ?
           <ReviewList reviews={filtered_reviews} /> :
