@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1567048468787" clover="3.2.0">
-  <project timestamp="1567048468787" name="All files">
-    <metrics statements="132" coveredstatements="12" conditionals="5327" coveredconditionals="0" methods="938" coveredmethods="7" elements="6397" coveredelements="19" complexity="0" loc="132" ncloc="132" packages="5" files="14" classes="14"/>
+<coverage generated="1567365282053" clover="3.2.0">
+  <project timestamp="1567365282053" name="All files">
+    <metrics statements="267" coveredstatements="0" conditionals="355" coveredconditionals="0" methods="147" coveredmethods="0" elements="769" coveredelements="0" complexity="0" loc="267" ncloc="267" packages="5" files="15" classes="15"/>
     <package name="reviews-frontend">
       <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="babel.config.js" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/babel.config.js">
+      <file name="babel.config.js" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/babel.config.js">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
       </file>
-      <file name="jest.config.js" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/jest.config.js">
+      <file name="jest.config.js" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/jest.config.js">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
       </file>
-      <file name="webpack.config.js" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/webpack.config.js">
+      <file name="webpack.config.js" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/webpack.config.js">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -20,7 +20,7 @@
     </package>
     <package name="reviews-frontend.coverage.lcov-report">
       <metrics statements="106" coveredstatements="0" conditionals="323" coveredconditionals="0" methods="52" coveredmethods="0"/>
-      <file name="block-navigation.js" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/coverage/lcov-report/block-navigation.js">
+      <file name="block-navigation.js" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/coverage/lcov-report/block-navigation.js">
         <metrics statements="28" coveredstatements="0" conditionals="15" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -51,11 +51,11 @@
         <line num="75" count="0" type="stmt"/>
         <line num="79" count="0" type="stmt"/>
       </file>
-      <file name="prettify.js" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/coverage/lcov-report/prettify.js">
+      <file name="prettify.js" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/coverage/lcov-report/prettify.js">
         <metrics statements="1" coveredstatements="0" conditionals="286" coveredconditionals="0" methods="29" coveredmethods="0"/>
         <line num="2" count="0" type="cond" truecount="0" falsecount="286"/>
       </file>
-      <file name="sorter.js" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/coverage/lcov-report/sorter.js">
+      <file name="sorter.js" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/coverage/lcov-report/sorter.js">
         <metrics statements="77" coveredstatements="0" conditionals="22" coveredconditionals="0" methods="17" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
@@ -137,58 +137,196 @@
       </file>
     </package>
     <package name="reviews-frontend.public">
-      <metrics statements="6" coveredstatements="0" conditionals="5004" coveredconditionals="0" methods="876" coveredmethods="0"/>
-      <file name="bundle.js" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/public/bundle.js">
-        <metrics statements="6" coveredstatements="0" conditionals="5004" coveredconditionals="0" methods="876" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="68"/>
-        <line num="6" count="0" type="cond" truecount="0" falsecount="142"/>
-        <line num="14" count="0" type="cond" truecount="0" falsecount="161"/>
-        <line num="22" count="0" type="cond" truecount="0" falsecount="3721"/>
-        <line num="30" count="0" type="cond" truecount="0" falsecount="162"/>
-        <line num="37" count="0" type="cond" truecount="0" falsecount="750"/>
+      <metrics statements="87" coveredstatements="0" conditionals="26" coveredconditionals="0" methods="62" coveredmethods="0"/>
+      <file name="bundle.js" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/public/bundle.js">
+        <metrics statements="87" coveredstatements="0" conditionals="26" coveredconditionals="0" methods="62" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="59" count="0" type="cond" truecount="0" falsecount="6"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="156" count="0" type="stmt"/>
+        <line num="168" count="0" type="stmt"/>
+        <line num="180" count="0" type="stmt"/>
+        <line num="192" count="0" type="stmt"/>
+        <line num="204" count="0" type="stmt"/>
+        <line num="216" count="0" type="stmt"/>
+        <line num="228" count="0" type="stmt"/>
+        <line num="240" count="0" type="stmt"/>
+        <line num="252" count="0" type="stmt"/>
+        <line num="264" count="0" type="stmt"/>
+        <line num="276" count="0" type="stmt"/>
+        <line num="288" count="0" type="stmt"/>
+        <line num="300" count="0" type="stmt"/>
+        <line num="312" count="0" type="stmt"/>
+        <line num="324" count="0" type="stmt"/>
+        <line num="336" count="0" type="stmt"/>
+        <line num="348" count="0" type="stmt"/>
+        <line num="360" count="0" type="stmt"/>
+        <line num="372" count="0" type="stmt"/>
+        <line num="384" count="0" type="stmt"/>
+        <line num="395" count="0" type="stmt"/>
+        <line num="407" count="0" type="stmt"/>
+        <line num="418" count="0" type="stmt"/>
+        <line num="430" count="0" type="stmt"/>
+        <line num="442" count="0" type="stmt"/>
+        <line num="453" count="0" type="stmt"/>
+        <line num="465" count="0" type="stmt"/>
+        <line num="477" count="0" type="stmt"/>
+        <line num="489" count="0" type="stmt"/>
+        <line num="501" count="0" type="stmt"/>
+        <line num="513" count="0" type="stmt"/>
+        <line num="525" count="0" type="stmt"/>
+        <line num="537" count="0" type="stmt"/>
+        <line num="549" count="0" type="stmt"/>
+        <line num="561" count="0" type="stmt"/>
+        <line num="573" count="0" type="stmt"/>
+        <line num="585" count="0" type="stmt"/>
+        <line num="596" count="0" type="stmt"/>
+        <line num="607" count="0" type="stmt"/>
+        <line num="618" count="0" type="stmt"/>
+        <line num="630" count="0" type="stmt"/>
+        <line num="642" count="0" type="stmt"/>
+        <line num="654" count="0" type="stmt"/>
+        <line num="666" count="0" type="stmt"/>
+        <line num="678" count="0" type="stmt"/>
+        <line num="690" count="0" type="stmt"/>
+        <line num="702" count="0" type="stmt"/>
       </file>
     </package>
     <package name="reviews-frontend.src">
-      <metrics statements="15" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="7"/>
-      <file name="App.jsx" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/src/App.jsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-      </file>
-      <file name="ReviewList.jsx" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/src/ReviewList.jsx">
-        <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+      <metrics statements="69" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="33" coveredmethods="0"/>
+      <file name="App.jsx" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/src/App.jsx">
+        <metrics statements="14" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="9" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+      </file>
+      <file name="NoResults.jsx" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/src/NoResults.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="ReviewList.jsx" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/src/ReviewList.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+      </file>
+      <file name="ReviewListItem.jsx" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/src/ReviewListItem.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+      </file>
+      <file name="SearchBar.jsx" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/src/SearchBar.jsx">
+        <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+      </file>
+      <file name="StarredRatings.jsx" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/src/StarredRatings.jsx">
+        <metrics statements="36" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="16" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
       </file>
-      <file name="ReviewListItem.jsx" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/src/ReviewListItem.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-      </file>
-      <file name="SearchBar.jsx" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/src/SearchBar.jsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-      </file>
-      <file name="index.jsx" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/src/index.jsx">
+      <file name="index.jsx" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/src/index.jsx">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="7" count="0" type="stmt"/>
       </file>
-      <file name="subSearchBar.jsx" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/src/subSearchBar.jsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-      </file>
     </package>
     <package name="reviews-frontend.test">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="setUpTest.js" path="/Users/kaylatillman/Desktop/fec_hr/reviews-frontend/test/setUpTest.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="5" count="1" type="stmt"/>
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="setUpTest.js" path="/Users/kaylatillman/Desktop/hack_reactor/airbnb_clone/reviews-frontend/test/setUpTest.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
       </file>
     </package>
   </project>

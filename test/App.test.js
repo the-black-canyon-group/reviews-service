@@ -5,7 +5,7 @@ import App from '../src/App.jsx';
 import ReviewList from '../src/ReviewList.jsx';
 import ReviewListItem from '../src/ReviewListItem.jsx';
 import SearchBar from '../src/SearchBar.jsx'
-import SubSearchBar from '../src/subSearchBar.jsx'
+import StarredRatings from '../src/StarredRatings.jsx'
 
 
 
@@ -46,11 +46,9 @@ describe('<SearchBar/>', () => {
 });
 
 
-describe('<SubSearchBar/>', () => {
+describe('<StarredRatings/>', () => {
     test('should mount an indivisual div', () => {
-        let wrapper = mount(<SubSearchBar/>);
+        let wrapper = mount(<StarredRatings/>);
         expect(wrapper.find('div'))
     });
 });
-
-

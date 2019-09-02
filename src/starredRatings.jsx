@@ -6,93 +6,95 @@ import PropTypes from 'prop-types';
 
 class StarredRatings extends React.Component{
     constructor(props) {
-        super(props) 
+        super(props)
+        this.state = {
+            accuracy: 0,
+            checkin: 0,
+            cleanliness: 0,
+            communication: 0,
+            location: 0,
+            value: 0,
+            total: 0
+        }
     }
-
-  
-
-    //AVGERAGE RATINGS: ONE RATING ==> MAP FOR TOTAL
-    avgTotalRating() {
-        let total = 0
-        this.props.starred_reviews.map((review) => {
-            total += review.accuracy
-            total += review.checkin
-            total += review.cleanliness
-            total += review.communication
-            total += review.location
-            total += review.value
-        })
-        // return Math.round(total /(this.starred_reviews.length))
-        return <div>{Math.round(total /(this.props.starred_reviews.length))}</div> 
-    }
-    
     
     //ACCURACY
     avgAccuracyRating() {
-        let total = 0
-        this.props.starred_reviews.map((review) => {
-            total += review.accuracy
+        this.setState({
+            accuracy: Math.round(this.state.accuracy / (this.props.starred_reviews.length))
         })
-        return <div>{Math.round(total / (this.props.starred_reviews.length))}</div>  
     }
+
     //CHECKIN
     avgCheckinRating() {
-        let total = 0
-        this.props.starred_reviews.map((review) => {
-            total += review.checkin
-        })
-        return <div>{Math.round(total / (this.props.starred_reviews.length))}</div>
-        
+        this.setState({
+            checkin: Math.round(this.state.checkin / (this.props.starred_reviews.length))
+        })   
     }
     
     //CLEANLINESS
     avgCleanlinessRating() {
-        let total = 0
-        this.props.starred_reviews.map((review) => {
-            total += review.cleanliness
+        this.setState({
+            cleanliness: Math.round(this.state.cleanliness / (this.props.starred_reviews.length))
         })
-        return <div>{Math.round(total/(this.props.starred_reviews.length))}</div> 
     }
     
     //COMMUNICATION
     avgCommunicationRating() {
-        let total = 0
-        this.props.starred_reviews.map((review) => {
-            total += review.communication
+        this.setState({
+            communication: Math.round(this.state.communication / (this.props.starred_reviews.length))
         })
-        return <div>{Math.round(total/(this.props.starred_reviews.length))}</div>
     }
     
     //LOCATION
     avgLocationRating() {
-        let total = 0
-        this.props.starred_reviews.map((review) => {
-            total += review.location
+        this.setState({
+            location: Math.round(this.state.location / (this.props.starred_reviews.length))
         })
-        return <div>{Math.round(total/(this.props.starred_reviews.length))}</div> 
     }
     
     //VALUE
     avgValueRating() {
-        let total = 0
-        this.props.starred_reviews.map((review) => {
-            total += review.value
+        this.setState({
+            value: Math.round(this.state.value / (this.props.starred_reviews.length))
         })
-        return <div>{Math.round(total/(this.props.starred_reviews.length))}</div> 
+    }
+
+    componentDidMount() {
+        this.props.starred_reviews.map((review) => {
+            this.setState({
+                accuracy: this.state.accuracy += parseInt(review.accuracy),
+                checkin: this.state.checkin += parseInt(review.checkin),
+                cleanliness: this.state.cleanliness += parseInt(review.cleanliness),
+                communication: this.state.communication += parseInt(review.communication),
+                location: this.state.location += parseInt(review.location),
+                value: this.state.value += parseInt(review.value)
+            })
+        })
+        this.avgAccuracyRating()
+        this.avgCheckinRating()
+        this.avgCleanlinessRating()
+        this.avgCommunicationRating()
+        this.avgLocationRating()
+        this.avgValueRating()
+        //GET TOTAL CATAGORY RATINGS 
+        this.setState({ total: this.state.total += (this.state.accuracy + this.state.checkin + this.state.cleanliness + this.state.location + this.state.communication + this.state.value) })
+        //SET TOTAL TO AVGERAGE: DIVIDE BY TOTAL
+        this.setState({ total: Math.round((this.state.total / (this.props.starred_reviews.length) % 5) + 1.0)  })
+        
     }
 
     render()  {
         return(
             <div>
                 <div id="totalReviews">{this.props.starred_reviews.length} Reviews</div>
-                {/* AVGTOTALRATING */}
-                <div id="avgTotalRatings"></div>
-                <div id="avgAccuracyRatings">ACCURACY:</div>
-                <div id="avgCheckInRatings">CHECKIN:</div>
-                <div id="avgCleanlinessRatings">CLEANLINESS:</div>
-                <div id="avgCommunicationRatings">COMMUNICATION:</div>
-                <div id="avgLocationRatings">LOCATION:</div>
-                <div id="avgValueRatings">VALUE:</div>
+                <div id="avgTotalRatings">{this.state.total}</div>
+                <div id="avgAccuracyRatings">ACCURACY:{this.state.accuracy}</div>
+                <div id="avgCheckInRatings">CHECKIN: {this.state.checkin}</div>
+                <div id="avgCleanlinessRatings">CLEANLINESS: {this.state.cleanliness}</div>
+                <div id="avgCommunicationRatings">COMMUNICATION: {this.state.communication}</div>
+                <div id="avgLocationRatings">LOCATION: {this.state.location}</div>
+                <div id="avgValueRatings">VALUE: {this.state.value}</div>
             </div>
             
         )

@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import _ from 'underscore';
 import ReviewList from './ReviewList.jsx';
 import SearchBar from './SearchBar.jsx';
 import NoResults from './NoResults.jsx'
@@ -46,9 +47,9 @@ class App extends React.Component {
     this.setState({ searchedTerm: null })
   }
 
-
   render() { 
-    const filtered_reviews = this.filterReviewsBySearchedTerm()   
+    const filtered_reviews = this.filterReviewsBySearchedTerm()
+    
     return (
       <div>
         <StarredRatings starred_reviews={this.state.reviews}/>
